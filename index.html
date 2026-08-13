@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LUNEAR | Cuidado para tu piel</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- =============================
+        MENÚ
+============================= -->
+
+  <header>
+
+    <div class="logo">
+      LUNÉA
+    </div>
+
+    <nav>
+
+      <a href="#inicio">Inicio</a>
+
+      <a href="#productos">Productos</a>
+
+      <a href="#tratamientos">Tratamientos</a>
+
+      <a href="#nosotros">Nosotros</a>
+
+      <a href="#contacto">Contacto</a>
+
+      <button id="carrito">
+        🛒 Carrito (<span id="contador">0</span>)
+      </button>
+
+    </nav>
+
+  </header>
+
+  <!-- =============================
+        INICIO
+============================= -->
+
+  <section id="inicio" class="inicio">
+
+    <div class="texto">
+
+      <h1>
+        Tu piel,
+        <span>tu mejor versión.</span>
+      </h1>
+
+      <p>
+
+        Descubre una rutina creada especialmente para cuidar tu piel con productos de alta calidad.
+
+      </p>
+
+      <button>
+        Ver Productos
+      </button>
+
+    </div>
+
+    <div class="imagen">
+
+      <img src="caja con productos.jpeg" alt="Lunear">
+
+    </div>
+
+  </section>
+
+  <!-- =============================
+        PRODUCTOS
+============================= -->
+
+  <section id="productos">
+
+    <h2>Nuestros Productos</h2>
+
+    <div class="productos">
+
+      <div class="producto">
+
+        <img src="productos3.jpeg">
+
+        <h3> Limpiador facial</h3>
+
+        <p>
+
+          Elimina impurezas, grasa y residuos para dejar la piel limpia y lista para la rutina.
+
+        </p>
+
+        <h4>$250 MXN</h4>
+
+        <button onclick="agregar('Sérum Facial',250)">
+          Agregar al carrito
+        </button>
+
+      </div>
+
+      <div class="producto">
+
+        <img src="productos2.jpeg">
+
+        <h3> Sérum facial</h3>
+
+        <p>
+
+          Aporta hidratación y ayuda a mejorar la apariencia de la piel con ingredientes concentrados.
+
+        </p>
+
+        <h4>$300 MXN</h4>
+
+        <button onclick="agregar('Crema Facial',300)">
+          Agregar al carrito
+        </button>
+
+      </div>
+
+      <div class="producto">
+
+        <img src="productos1.jpeg">
+
+        <h3>Crema hidratante</h3>
+
+        <p>
+
+          Hidrata la piel, ayuda a mantener la humedad y deja una sensación de suavidad durante el día.
+
+        </p>
+
+        <h4>$350 MXN</h4>
+
+        <button onclick="agregar('Gel Limpiador',350)">
+          Agregar al carrito
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =============================
+        TRATAMIENTOS
+============================= -->
+
+  <section id="tratamientos">
+
+    <h2>Tratamientos</h2>
+
+    <div class="tratamientos">
+
+      <div>
+
+        💧
+
+        <h3>Hidratación</h3>
+
+        <p>
+          Ideal para piel seca.
+        </p>
+
+      </div>
+
+      <div>
+
+        ✨
+
+        <h3>Iluminación</h3>
+
+        <p>
+
+          Ayuda a mejorar la apariencia de la piel.
+
+        </p>
+
+      </div>
+
+      <div>
+
+        🌿
+
+        <h3>Control de grasa</h3>
+
+        <p>
+
+          Rutina para piel mixta y grasa.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =============================
+        NOSOTROS
+============================= -->
+
+  <section id="nosotros">
+
+    <h2>Sobre Lunea</h2>
+
+    <p>
+
+      En Lunea creemos que el cuidado de la piel debe sentirse como un momento especial para ti.
+
+    </p>
+
+  </section>
+
+  <!-- =============================
+        CARRITO
+============================= -->
+
+  <div id="ventanaCarrito">
+
+    <h2>Mi carrito</h2>
+
+    <div id="listaProductos"></div>
+
+    <h3 id="total">
+      Total: $0
+    </h3>
+
+    <button>
+
+      Finalizar compra
+
+    </button>
+
+  </div>
+
+  <!-- =============================
+        CONTACTO
+============================= -->
+
+  <section id="contacto">
+
+    <h2>Contáctanos</h2>
+
+    <p>
+      📍 Ciudad de México
+    </p>
+
+    <p>
+      📞 55 0000 0000
+    </p>
+
+    <p>
+      ✉ @Lunéa.mx
+    </p>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
